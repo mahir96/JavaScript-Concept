@@ -1,3 +1,5 @@
+// @ts-check
+
 const fruit = ["Apple", "Orange"];
 
 let val;
