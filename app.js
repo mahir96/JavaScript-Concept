@@ -1,42 +1,24 @@
-// @ts-check
-
-const fruit = ["Apple", "Orange"];
+const today = new Date();
+const birthday = new Date("2001-6-13");
 
 let val;
 
-// Inserting two element before Orange
-fruit.splice(1, 0, "Banana", "Graps");
+val = today;
 
-// Inserting one element after Orange
-fruit.splice(4, 0, "Strawberry");
+// Get
+val = today.getMonth();
+val = today.getDate();
+val = today.getDay();
+val = today.getFullYear();
+val = today.getHours();
+val = today.getMinutes();
+val = today.getTime();
 
-// Removing one element
-fruit.splice(2, 1);
-
-// Removing one element at index -1 and Replace new element
-fruit.splice(-1, 1, "Blackberry");
-
-// adding one element
-fruit.splice(2, 0, "Graps");
-
-// Replacing Orange to lemon
-fruit.splice(3, 1, "lemon");
-
-// Removing 2 element from index 0 and insert Strawberry,pears,tomato
-fruit.splice(0, 2, "Strawberry", "Pears", "Tomato");
-
-// Replacing two element starting at index 0
-fruit.splice(0, 2, "Apple", "Orange");
-
-// Removing 1 element from index -4
-fruit.splice(-4, 1);
-
-// Removing 2 element from index 3
-fruit.splice(3, 2);
-
-// Removing all element after index 1
-fruit.splice(2, 1);
-
-val = fruit.length;
-console.log(fruit);
-console.log(val);
+// Set
+birthday.setMonth(5);
+birthday.setFullYear(1995);
+birthday.setDate(26);
+birthday.setHours(22);
+birthday.setMinutes(27);
+birthday.setSeconds(48);
+console.log(birthday);
