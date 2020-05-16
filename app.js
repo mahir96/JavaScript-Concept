@@ -37,6 +37,19 @@ fruit.splice(3, 2);
 // Removing all element after index 1
 fruit.splice(2, 1);
 
+// Push method
+fruit.push("Lemon");
+
+fruit.splice(0, 1);
+
+fruit.unshift("apple");
+
+fruit.shift();
+
+fruit.pop();
+
+fruit.splice(0, 0, "Apple");
+
 val = fruit.length;
 console.log(fruit);
 console.log(val);
