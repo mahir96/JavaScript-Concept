@@ -7,6 +7,15 @@ const person = {
     City: "Zanzibar",
     State: "Fuoni",
   },
+  getAge: function () {
+    let ageStr;
+    if (this.age < 28) {
+      ageStr = `your to young ${this.firstName}`;
+    } else {
+      ageStr = `your to Old ${this.firstName}`;
+    }
+    return ageStr;
+  },
 };
-
-console.log(typeof person);
+val = person.getAge();
+console.log(val);
