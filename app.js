@@ -23,5 +23,6 @@ val = person.Hobbies;
 val = person.Hobbies.splice(3, 1);
 val = person.Hobbies;
 val = person.Hobbies.splice(2, 0, "Travelling");
+val = person.Hobbies.splice(3, 1);
 val = person.Hobbies;
 console.log(val);
