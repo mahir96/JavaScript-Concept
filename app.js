@@ -1,19 +1,61 @@
-const today = new Date();
-const birthday = new Date("9-6-1995");
-let val;
+const id = 100;
 
-val = today;
+// // Equal to sign
+// if (id == 338) {
+//   console.log("Correct");
+// } else {
+//   console.log("Incorrect");
+// }
 
-// Get
-val = today.getMonth();
-val = today.getDate();
-val = today.getFullYear();
-val = today.getHours();
-val = today.getMinutes();
-// val = today.getTime();
+// // Not Equal to
+// if (id != 101) {
+//   console.log("Correct");
+// } else {
+//   console.log("Not Correct");
+// }
 
-birthday.setMonth(5);
-birthday.setDate(26);
-birthday.setHours(8);
-birthday.setMinutes(34, 22);
-console.log(birthday);
+// // Equal to Value and Type
+// if (id === 338) {
+//   console.log("correct");
+// } else {
+//   console.log("incorrect");
+// }
+
+// // Not Equal to Value and Type
+// if (id !== 100) {
+//   console.log("correct");
+// } else {
+//   console.log("Incorrect");
+// }
+
+// if (id) {
+//   console.log(`the id is ${id}`);
+// } else {
+//   console.log(`No id`);
+// }
+
+// if (typeof id !== "undefined") {
+//   console.log(`The id is ${id}`);
+// } else {
+//   console.log(`No id`);
+// }
+
+// Greater than
+// if (id > 200) {
+//   console.log("Correct");
+// } else {
+//   console.log("Incorrect");
+// }
+
+// Less than
+if (id < 200) {
+  console.log("Correct");
+} else {
+  console.log("Incorrect");
+}
+
+if (id <= 100) {
+  console.log("Correct");
+} else {
+  console.log("Incorrect");
+}
