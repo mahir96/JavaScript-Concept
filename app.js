@@ -1,61 +1,68 @@
-const id = 100;
+const num = 100;
 
-// // Equal to sign
-// if (id == 338) {
+// Equal Operator
+// if (num == 100) {
 //   console.log("Correct");
 // } else {
 //   console.log("Incorrect");
 // }
 
-// // Not Equal to
-// if (id != 101) {
+// Not Equal
+// if (num != 101) {
 //   console.log("Correct");
 // } else {
-//   console.log("Not Correct");
+//   console.log("Incorrect");
 // }
 
-// // Equal to Value and Type
-// if (id === 338) {
-//   console.log("correct");
-// } else {
-//   console.log("incorrect");
-// }
-
-// // Not Equal to Value and Type
-// if (id !== 100) {
+// if (num === 100) {
 //   console.log("correct");
 // } else {
 //   console.log("Incorrect");
 // }
 
-// if (id) {
-//   console.log(`the id is ${id}`);
-// } else {
-//   console.log(`No id`);
-// }
-
-// if (typeof id !== "undefined") {
-//   console.log(`The id is ${id}`);
-// } else {
-//   console.log(`No id`);
-// }
-
-// Greater than
-// if (id > 200) {
+// if (num !== 100) {
 //   console.log("Correct");
 // } else {
 //   console.log("Incorrect");
 // }
 
-// Less than
-if (id < 200) {
-  console.log("Correct");
-} else {
-  console.log("Incorrect");
-}
+// if (typeof num !== "number") {
+//   console.log("Correct");
+// } else {
+//   console.log("Incorrect");
+// }
 
-if (id <= 100) {
-  console.log("Correct");
-} else {
-  console.log("Incorrect");
-}
+// if (typeof num !== "undefined") {
+//   console.log("Correct");
+// } else {
+//   console.log("Incorrect");
+// }
+
+// const color = "Purple";
+// if (color === "red") {
+//   console.log("color is red");
+// } else if (color === "Purple") {
+//   console.log(`color is ${color}`);
+// } else {
+//   console.log("Not Available");
+// }
+
+const name = "Mahir";
+const age = 18;
+
+// if (age > 0 && age < 12) {
+//   console.log(`${name} is a Child`);
+// } else if (age >= 13 && age <= 19) {
+//   console.log(`${name} is a Teenage`);
+// } else {
+//   console.log(`${name} is an Adult`);
+// }
+
+// if (age <= 15 || age >= 25) {
+//   console.log(`${name} can not Run`);
+// } else {
+//   console.log(`${name} is registerd`);
+// }
+
+// Ternary Operator
+console.log(age <= 15 || age >= 25 ? `${name} Can not run` : `${name} can run`);
