@@ -1,68 +1,87 @@
-const num = 100;
-
-// Equal Operator
-// if (num == 100) {
-//   console.log("Correct");
-// } else {
-//   console.log("Incorrect");
+// const color = "blue";
+// switch (color) {
+//   case "purple":
+//     console.log(`color is ${color}`);
+//     break;
+//   case "Green":
+//     console.log(`color is ${color}`);
+//     break;
+//   default:
+//     console.log(`color is no Green or purple`);
 // }
 
-// Not Equal
-// if (num != 101) {
-//   console.log("Correct");
-// } else {
-//   console.log("Incorrect");
+// const expr = "Papayas";
+// switch (expr) {
+//   case "Orange":
+//     console.log(`Orange are $8 a dollar`);
+//     break;
+//   case "Mango":
+//   case "Papayas":
+//     console.log(`Mangoes and papaya are $70`);
+//     break;
+//   default:
+//     console.log(`Sorry we are out of ${expr}`);
+// }
+const date = new Date().getDate();
+let day;
+// switch (date) {
+//   case 0:
+//     day = "Sunday";
+//     break;
+//   case 1:
+//     day = "Monday";
+//     break;
+//   case 2:
+//     day = "Tuesday";
+//     break;
+//   case 3:
+//     day = "Wensday";
+//     break;
+//   case 4:
+//     day = "thursday";
+//     break;
+//   case 5:
+//     day = "friday";
+//     break;
+//   case 6:
+//     day = "Satday";
+//     break;
+
+//   default:
+//     console.log(`Please pick a date`);
+// }
+// console.log(day);
+
+// const foo = 0;
+// switch (foo) {
+//   case -1:
+//     console.log("Negative 1");
+//     break;
+//   default:
+//     console.log("default");
+//   case 0:
+//     console.log(0);
+//   case 1:
+//     console.log(1);
+//     break;
+//   case 2:
+//     console.log(2);
 // }
 
-// if (num === 100) {
-//   console.log("correct");
-// } else {
-//   console.log("Incorrect");
-// }
+let bar = 5;
+switch (bar) {
+  default:
+    console.log("No number found ");
+  case 4:
+    console.log(4);
+    break;
+  case 5:
+    console.log(3);
 
-// if (num !== 100) {
-//   console.log("Correct");
-// } else {
-//   console.log("Incorrect");
-// }
-
-// if (typeof num !== "number") {
-//   console.log("Correct");
-// } else {
-//   console.log("Incorrect");
-// }
-
-// if (typeof num !== "undefined") {
-//   console.log("Correct");
-// } else {
-//   console.log("Incorrect");
-// }
-
-// const color = "Purple";
-// if (color === "red") {
-//   console.log("color is red");
-// } else if (color === "Purple") {
-//   console.log(`color is ${color}`);
-// } else {
-//   console.log("Not Available");
-// }
-
-const name = "Mahir";
-const age = 18;
-
-// if (age > 0 && age < 12) {
-//   console.log(`${name} is a Child`);
-// } else if (age >= 13 && age <= 19) {
-//   console.log(`${name} is a Teenage`);
-// } else {
-//   console.log(`${name} is an Adult`);
-// }
-
-// if (age <= 15 || age >= 25) {
-//   console.log(`${name} can not Run`);
-// } else {
-//   console.log(`${name} is registerd`);
-// }
-
-// Ternary Operator
-console.log(age <= 15 || age >= 25 ? `${name} Can not run` : `${name} can run`);
+  case 2:
+    console.log(2);
+    break;
+  case 1:
+    console.log(1);
+    break;
+}
