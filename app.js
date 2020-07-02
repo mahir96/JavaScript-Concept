@@ -1,28 +1,30 @@
-// FUNCTION DECLARATION
+// Arrays
 
-function person() {
-  return "Mahir";
-}
+const fruit = ["Apple", "Banana", "Graps"];
+const food = ["Ugali", "Wali", "Tambi"];
+const num = new Array(5, 30, 50, 8, 60, 100);
 
-// console.log(person());
+let val;
 
-function person(firstName = "Mahir", age = 24) {
-  return `hellow ${firstName} your age is ${age}`;
-}
-
-// console.log(person());
-
-// FUNCTION EXPRESS
-const myTest = function () {
-  return "Positve ";
-};
-// console.log(myTest());
-
-const calArea = function calArea(width = 8, height = 6) {
-  return width * height;
-};
-// console.log(calArea());
-const Squire = function mySquire(width = 5, height = 4) {
-  return width * height;
-};
-console.log(Squire());
+val = fruit.length;
+val = Array.isArray(food);
+val = fruit[2];
+fruit[3] = "Makande";
+val = fruit.push("Orange");
+val = fruit.splice(3, 1);
+val = fruit.unshift("lemon");
+val = fruit.pop();
+val = fruit.shift();
+val = fruit.reverse();
+val = fruit.concat(food);
+val = fruit.sort();
+// compare function
+val = num.sort((a, b) => {
+  return a - b;
+});
+// or
+val = num.sort(function (a, b) {
+  return a - b;
+});
+console.log(fruit);
+console.log(val);
