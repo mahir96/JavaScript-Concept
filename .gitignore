@@ -1,1 +1,3 @@
 *.txt
+*.moment.js
+test/*.js

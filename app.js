@@ -1,30 +1,62 @@
-// Arrays
+// General loops
 
-const fruit = ["Apple", "Banana", "Graps"];
-const food = ["Ugali", "Wali", "Tambi"];
-const num = new Array(5, 30, 50, 8, 60, 100);
+// for (let i = 0; i < 9; i++) {
+//   console.log(i);
+// }
+// for (let i = 0; i < 10; i++) {
+//   if (i === 2) {
+//     console.log(`${i} is My favorit Number`);
+//     continue;
+//   } else if (i === 6) {
+//     break;
+//   }
+//     console.log(i);
+// }
 
-let val;
+// while loop
+// let i = 0;
+// while (i < 10) {
+//   console.log(i);
+//   i++;
+// }
 
-val = fruit.length;
-val = Array.isArray(food);
-val = fruit[2];
-fruit[3] = "Makande";
-val = fruit.push("Orange");
-val = fruit.splice(3, 1);
-val = fruit.unshift("lemon");
-val = fruit.pop();
-val = fruit.shift();
-val = fruit.reverse();
-val = fruit.concat(food);
-val = fruit.sort();
-// compare function
-val = num.sort((a, b) => {
-  return a - b;
+// Do while loop
+// let i = 0;
+// do{
+//     console.log(i);
+//     i++
+// }while(i <= 10)
+
+// loop through Array
+const fruits = ["Apple", "Orange", "Graps"];
+// for (let i = 0; i < fruit.length; i++) {
+//   console.log(fruit[i]);
+// }
+
+// forEach
+// fruits.forEach(function (fruit) {
+//   console.log(fruit);
+// });
+
+// Arrays of Object
+
+const users = [
+  { id: 1, name: "Dumilla" },
+  { id: 2, name: "Mahir" },
+  { id: 3, name: "Dullah" },
+];
+const ids = users.map(function (user) {
+  return user.id;
 });
-// or
-val = num.sort(function (a, b) {
-  return a - b;
-});
-console.log(fruit);
-console.log(val);
+// console.log(ids);
+
+const person = {
+  firstName: "Mahir",
+  lastName: "Juma",
+  age: 25,
+};
+
+// For In
+for (let x in person) {
+  console.log(`${x}: ${person[x]}`);
+}
